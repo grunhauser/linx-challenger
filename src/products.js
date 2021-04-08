@@ -1,8 +1,15 @@
-let productsCache = []
-let showProducts = []
 
-loadProducts()
+let productsCache = [] /** Stores products when not all can be loaded */
 
+loadProducts() /** calls the loadProducts function the first time */
+
+/**
+ * indicates the API search page
+ * @param {number} page 
+ * 
+   This function checks if the user is on the phone, received a newsletter or is on the desktop, 
+   from there it searches the API and assembles the HTML through the loadItems function.
+ */
 function loadProducts(page = 1) {
     const url = `https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=${page}` 
     const email = document.getElementsByClassName('verifyEmail')[0]
@@ -48,15 +55,23 @@ function loadProducts(page = 1) {
             })
     }
 }
-/* Get Window and  */
+
+/**
+ * Returns the width to Window
+ * @returns {boolean} 
+ */
 function responsivePhone() {
     const windowWidth = window.innerWidth;
     return (windowWidth > 800) ? false : true
 }
 
+/**
+ * Load the HTML and CSS of the products into a forEach
+ * add Card (img, title, description, oldPrice, price, installments, btnBuy)
+ * @param {Object} products array of products
+ */
 function loadItems (products) {
     let items = document.getElementById('items')
-    showProducts = showProducts.concat(products)
     products.forEach(element => {
         const card = document.createElement('div')
         card.classList.add('card-item')
@@ -94,7 +109,11 @@ function loadItems (products) {
     })
 }
 
-// Mask CPF
+/**
+ * Returns the replace to CPF
+ * @param {Object} Objcpf type HTMLInputElement
+ * @returns {Obj} return the object by adding the value 
+ */
 function maskCpf(Objcpf){
     cpf = Objcpf.value
     cpf = cpf.replace(/\D/g,"")
