@@ -271,6 +271,9 @@ input[type=radio],
     font-size: 14px;
     color: #888888;
 }
+.verifyEmail{
+    display: none;
+}
 
 /* Layout Phone */
 
