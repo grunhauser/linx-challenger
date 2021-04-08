@@ -5,9 +5,20 @@ loadProducts()
 
 function loadProducts(page = 1) {
     const url = `https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=${page}` 
+    const email = document.getElementsByClassName('verifyEmail')[0]
+
     if(productsCache.length){
-        loadItems(productsCache)
-        productsCache = []
+        if(email){
+            const newCacheProducts = productsCache.slice(0, 2)
+
+            productsCache.shift()
+            productsCache.shift()
+
+            loadItems(newCacheProducts)
+        }else{
+            loadItems(productsCache)
+            productsCache = []
+        }
     }else{
         page++
         document.getElementById('btn-page').setAttribute('onclick', `loadProducts('${page}')`)
@@ -15,14 +26,20 @@ function loadProducts(page = 1) {
         .then(response => response.json())
         .then(({ products }) => {
             const newProducts = products.reduce((productsToShow, product, index) => {
-                if(responsivePhone() && index <=3){
+                if(responsivePhone() && index <= 3){
                     productsToShow.push(product)
                 }else if(responsivePhone() && index > 3){
+                    productsCache.push(product)
+                }else if(email && index <= 1) {
+                    productsToShow.push(product)
+                }else if(email && index > 1) {
                     productsCache.push(product)
                 }else{
                     productsToShow.push(product)
                 }
-                    return productsToShow
+
+                return productsToShow
+
                 },[])
 
                 loadItems(newProducts)
