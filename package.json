@@ -1,7 +1,7 @@
 {
   "name": "linx_challenger",
   "version": "1.0.0",
-  "description": "Gustavo Martins Grünhäuser",
+  "description": "",
   "main": "index.js",
   "engines": {
     "node": "14.x",
