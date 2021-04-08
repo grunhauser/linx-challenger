@@ -1,0 +1,20 @@
+{
+  "name": "linx_challenger",
+  "version": "1.0.0",
+  "description": "Gustavo Martins Grünhäuser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grunhauser/linx-challenger.git"
+  },
+  "keywords": [],
+  "author": "Gustavo Martins Grünhäuser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grunhauser/linx-challenger/issues"
+  },
+  "homepage": "https://github.com/grunhauser/linx-challenger#readme"
+}
