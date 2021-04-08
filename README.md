@@ -9,8 +9,14 @@ Para o desenvolvimento da página foi utilizado HTML5, JavaScript e CSS.
 ## Estrutura
 Um projeto visando responsividade, otimizado para não consultar a API de forma desnecessária e seguindo os padrões de normas sujeridas no desafio.
 
-## Implementação JS
-O código JS se encontra em um único arquivo chamado products.js, nele é feita todas as validações.
+## JS
+O código JavaScript se encontra em um único arquivo chamado products.js, nele é feita todas as validações.
+
+## Implementação local
+Ferramentas:
+ - VS core;
+ - Live-Server plugin.
+O live-server é uma ferramenta simples para desenvolver html e htm localmente.
 
 ### **[Veja o live preview!](https://linx-challenger.herokuapp.com/)**
 
