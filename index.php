@@ -17,10 +17,10 @@
     
             <nav class="head-nav">
                 <div class="nav-flex">
-                    <a href="#"><p>Conheça a Linx</p></a>
-                    <a href="#"><p>Ajude o algorítimo</p></a>
-                    <a href="#"><p>Seus produtos</p></a>
-                    <a href="#"><p>Compartilhe</p></a>
+                    <a href="https://www.linx.com.br/quem-somos/"><p>Conheça a Linx</p></a>
+                    <a href="#anchor-help"><p>Ajude o algorítimo</p></a>
+                    <a href="#items"><p>Seus produtos</p></a>
+                    <a href="#anchor-title"><p>Compartilhe</p></a>
                 </div>
             </nav>
         </header>
@@ -29,7 +29,7 @@
             <div class="help-content">
                 <form class="form-help" action="#" method="post" onsubmit="">
                     <div class="form-fields">
-                        <div class="input-group">
+                        <div class="input-group" id="anchor-help">
                             <p class="text-help">Ajude o algorítimo a ser mais certeiro</p>
                             <p class="text-long-help">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. 
@@ -87,7 +87,7 @@
     
         <section>
             <h2 class="news-title">Compartilhe a novidade</h2>
-            <div class="news-content">
+            <div class="news-content" id="anchor-title">
                 <p class="text-news">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
                 <form class="form-news" action="#" method="post" onsubmit="">
                     <div class="form-fields">

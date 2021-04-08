@@ -57,7 +57,7 @@ function loadProducts(page = 1) {
 }
 
 /**
- * Returns the width to Window
+ * Returns Boolean if the window width is greater than 800
  * @returns {boolean} 
  */
 function responsivePhone() {
@@ -111,8 +111,8 @@ function loadItems (products) {
 
 /**
  * Returns the replace to CPF
- * @param {Object} Objcpf type HTMLInputElement
- * @returns {Obj} return the object by adding the value 
+ * @param Object Objcpf type HTMLInputElement
+ * @returns {Object} return the object by adding the value 
  */
 function maskCpf(Objcpf){
     cpf = Objcpf.value
