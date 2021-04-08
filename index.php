@@ -19,17 +19,17 @@
                 <div class="nav-flex">
                     <a href="https://www.linx.com.br/quem-somos/"><p>Conheça a Linx</p></a>
                     <a href="#anchor-help"><p>Ajude o algorítimo</p></a>
-                    <a href="#items"><p>Seus produtos</p></a>
+                    <a href="#anchor-items"><p>Seus produtos</p></a>
                     <a href="#anchor-title"><p>Compartilhe</p></a>
                 </div>
             </nav>
         </header>
         <!-- Middle -->
         <section>
-            <div class="help-content">
+            <div class="help-content" id="anchor-help">
                 <form class="form-help" action="#" method="post" onsubmit="">
                     <div class="form-fields">
-                        <div class="input-group" id="anchor-help">
+                        <div class="input-group">
                             <p class="text-help">Ajude o algorítimo a ser mais certeiro</p>
                             <p class="text-long-help">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. 
@@ -76,7 +76,7 @@
         </section>
 
         <section>
-            <h2 class="selection-title">Sua seleção especial</h2>
+            <h2 class="selection-title" id="anchor-items">Sua seleção especial</h2>
             <div class="items" id="items">
             </div>
             <button id="btn-page" class="btn-items" onclick="carregaProdutos()">
