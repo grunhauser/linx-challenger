@@ -16,7 +16,7 @@ O código JavaScript se encontra em um único arquivo chamado products.js, nele 
 Ferramentas:
  - VS core;
  - Live-Server plugin.
-O live-server é uma ferramenta simples para desenvolver html e htm localmente.
+O live-server é uma ferramenta simples para desenvolver localmente.
 
 ### **[Veja o live preview!](https://linx-challenger.herokuapp.com/)**
 
